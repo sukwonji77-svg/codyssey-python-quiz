@@ -64,6 +64,7 @@ class QuizGame:
             with temp.open("w", encoding="utf-8") as f:
                 json.dump(data, f, ensure_ascii=False, indent=2)
             temp.replace(self.file)
+            print("퀴즈 데이터가 저장되었습니다.")
         except OSError as e:
             print("파일 저장 실패:", e)
 
