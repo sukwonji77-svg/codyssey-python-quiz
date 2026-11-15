@@ -130,14 +130,16 @@ class QuizGame:
         if not self.quizzes:
             print("등록된 퀴즈가 없습니다.")
         for i, q in enumerate(self.quizzes, 1):
-            print(f"{i}. {q.question}")
+            print(f"\n[{i}] {q.question}")
+
+            for j, choice in enumerate(q.choices, 1):
+                print(f"  {j}. {choice}")
 
     def show_score(self):
         if self.best_score is None:
             print("아직 퀴즈를 풀지 않았습니다.")
         else:
             print(f"최고 점수: {self.best_score}점")
-
     def run(self):
         try:
             while True:
