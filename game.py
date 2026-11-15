@@ -70,12 +70,20 @@ class QuizGame:
     def read_number(self, prompt, minimum, maximum):
         while True:
             value = input(prompt).strip()
+
+            if not value:
+                print("입력값이 비어 있습니다.")
+                continue
+
             try:
                 number = int(value)
-                if minimum <= number <= maximum:
-                    return number
             except ValueError:
-                pass
+                print("숫자만 입력하세요.")
+                continue
+
+            if minimum <= number <= maximum:
+                return number
+
             print(f"{minimum}~{maximum} 사이 숫자를 입력하세요.")
 
     def play(self):
