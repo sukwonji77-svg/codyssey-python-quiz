@@ -31,3 +31,6 @@ quizzes는 문제 목록, best_score는 최고 점수입니다.
 
 ## 예외 처리
 잘못된 숫자, 빈 입력, Ctrl+C, EOF 및 JSON 파일 오류를 처리합니다.
+
+## Git clone 실습
+GitHub 저장소 복제 및 동기화 확인 완료.
