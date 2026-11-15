@@ -51,14 +51,14 @@
       "answer": 2
     },
     {
-      "question": "2",
+      "question": "Python에서 문자열 자료형은?",
       "choices": [
-        "1",
-        "1",
-        "1",
-        "1"
+        "int",
+        "str",
+        "float",
+        "bool"
       ],
-      "answer": 1
+      "answer": 2
     }
   ],
   "best_score": 80
