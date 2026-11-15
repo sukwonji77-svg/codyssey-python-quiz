@@ -84,7 +84,8 @@ class QuizGame:
             return
 
         score = 0
-        for q in self.quizzes:
+        for i, q in enumerate(self.quizzes, 1):
+            print(f"\n[문제 {i}/{len(self.quizzes)}]")
             q.show()
             answer = self.read_number("정답 (1~4): ", 1, 4)
             if q.check(answer):
