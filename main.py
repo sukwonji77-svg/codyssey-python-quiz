@@ -53,4 +53,4 @@ def play_quiz():
 
 
 if __name__ == "__main__":
-    play_quiz()
+    print("퀴즈 게임은 python3 game.py 명령으로 실행하세요.")
